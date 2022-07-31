@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head'); %>
+</head>
+
+<body>
+
+    <form action="api/upload/" enctype="multipart/form-data" method="post">
+     <p>Загрузите ваши фотографии на сервер</p>
+     <p><input id="photo" type="file" name="photo" multiple accept="image/*">
+     <input id="submit" type="submit" value="Отправить"></p>
+    <input id="put" type="button" value="Поставить">
+    </form>
+
+    <img id="img1" src=<%= url %>>
+
+    <%- include('../partials/footer'); %>
+</body>
+</html>
