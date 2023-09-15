@@ -6,10 +6,10 @@ const {google} = require('googleapis');
 const TOKEN_PATH = 'token.json';
 const SCOPES = ['https://www.googleapis.com/auth/drive'];
 
-const CLIENT_ID = '409588257814-j7tib4ttoiit7a4qmhvm59445859cmv6.apps.googleusercontent.com'
-const CLIENT_SECRET = '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'
-const REDIRECT_URI = 'https://developers.google.com/oauthplayground'
-const REFERESH_TOKEN = '1//04QOVvqPD_Bs8CgYIARAAGAQSNwF-L9IrNv0elOW84f03BQibpGd3DGpKAxvCX8laoTsnAoTsywsBVhYwTlzngB0c1Da-IIHVDhg'
+const CLIENT_ID = ''
+const CLIENT_SECRET = ''
+const REDIRECT_URI = ''
+const REFERESH_TOKEN = ''
 
 const filePath = path.join(__dirname, '../../public/image/photo.jpg');
 
