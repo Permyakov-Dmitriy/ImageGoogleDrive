@@ -9,6 +9,7 @@ router
     try{
         const result = await driveControllers.getAllFiles()
         return res.send(result)
+        
     }catch(e){
         return res.status(500).send(e.message)
     }
@@ -19,8 +20,9 @@ router
     try{
         const id = await driveControllers.createFile()
         const result = await driveControllers.generatePublicUrl(id)
-        console.log(result);
+        
         return res.send(result)
+        
     }catch(e){
         return res.status(500).send(e.message)
     }
@@ -31,7 +33,9 @@ router
     try{
         const result = await driveControllers.createFile(id)
         if(!result) return res.status(400).send("Файла с таким id не существует")
+        
         return res.send(result)
+        
     }catch(e){
         return res.status(500).send(e.message)
     }
